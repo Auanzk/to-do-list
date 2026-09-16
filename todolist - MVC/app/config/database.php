@@ -10,9 +10,11 @@ class Database {
     public $conexao = '';
 
     public function conectar(){
-    $this->coneexao = new mysqli($this->localhost, $this->usuario, $this->senha, $this->banco);
+    $this->conexao = new mysqli($this->localhost, $this->usuario, $this->senha, $this->banco);
     if($this->conexao->connect_error);
         die("algo deu errado" . $this->conexao->connect_error);
+    
+    
     }
 
     
